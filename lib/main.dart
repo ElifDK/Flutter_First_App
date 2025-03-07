@@ -19,6 +19,7 @@ class Home extends StatelessWidget {
       ),
       body:
       Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
         Center(
             child: Container(
@@ -34,8 +35,30 @@ class Home extends StatelessWidget {
               ),),
             )),
           Padding(padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
-          child: Text('Padding'),)
-        ]),
+          child: Text('Padding'),),
+
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              color:Colors.blue,
+              height: 100,
+                child: Text('One'),
+            ),
+            Container(
+              color:Colors.amber,
+              height: 200,
+              child: Text('Two'),
+            ),
+            Container(
+              color:Colors.red,
+              height: 300,
+              child: Text('Three'),
+            ),
+          ],
+
+        )]),
       floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.blue,
           onPressed: () {},
