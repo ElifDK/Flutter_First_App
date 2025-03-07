@@ -17,7 +17,25 @@ class Home extends StatelessWidget {
         title: Text ('CS310'),
         centerTitle: true,
       ),
-      body: Center(child: Text ('Hello Everyone!')),
+      body:
+      Column(
+        children: [
+        Center(
+            child: Container(
+              color: Colors.purple,
+              padding: EdgeInsets.all(20),
+              margin: EdgeInsets.fromLTRB(10, 20, 30, 40),
+              child: Text (
+                  'Hello Everyone!',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold
+
+              ),),
+            )),
+          Padding(padding: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
+          child: Text('Padding'),)
+        ]),
       floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.blue,
           onPressed: () {},
