@@ -41,20 +41,29 @@ class Home extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              color:Colors.blue,
-              height: 100,
-                child: Text('One'),
+            Expanded(
+              flex: 3,
+              child: Container(
+                color:Colors.blue,
+                height: 100,
+                  child: Text('One'),
+              ),
             ),
-            Container(
-              color:Colors.amber,
-              height: 200,
-              child: Text('Two'),
+            Expanded(
+              flex:2,
+              child: Container(
+                color:Colors.amber,
+                height: 200,
+                child: Text('Two'),
+              ),
             ),
-            Container(
-              color:Colors.red,
-              height: 300,
-              child: Text('Three'),
+            Expanded(
+            flex: 1,
+              child: Container(
+                color:Colors.red,
+                height: 300,
+                child: Text('Three'),
+              ),
             ),
           ],
 
