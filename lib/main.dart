@@ -15,7 +15,13 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: Text ('CS310'),
+        centerTitle: true,
       ),
+      body: Center(child: Text ('Hello Everyone!')),
+      floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.blue,
+          onPressed: () {},
+          child: Text('Click')),
     );
   }
 }
